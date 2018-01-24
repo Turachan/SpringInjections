@@ -1,5 +1,4 @@
-package com.baeldung.spring.xmlconfig.domain.setter;
-
+package com.baeldung.injectiontypes.xmlconfig.domain.setter;
 
 
 public class SolarSystemSetterDi {
@@ -11,6 +10,11 @@ public class SolarSystemSetterDi {
         return uranus;
     }
 
+    public void printDiameters() {
+        System.out.println("Diameter of the uranus is :" + uranus.getDiameter() + " km");
+        System.out.println("Diameter of the jupiter is :" + jupiter.getDiameter() + " km");
+    }
+
     public void setUranus(Uranus uranus) {
         this.uranus = uranus;
     }
@@ -18,6 +22,7 @@ public class SolarSystemSetterDi {
     public Jupiter getJupiter() {
         return jupiter;
     }
+
     public void setJupiter(Jupiter jupiter) {
         this.jupiter = jupiter;
     }

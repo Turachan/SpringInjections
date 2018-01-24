@@ -3,15 +3,15 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="jupiter" class="com.baeldung.spring.xmlconfig.domain.setter.Jupiter">
+    <bean id="jupiter" class="com.baeldung.injectiontypes.xmlconfig.domain.setter.Jupiter">
         <constructor-arg value="50724"/>
     </bean>
 
-    <bean id="uranus" class="com.baeldung.spring.xmlconfig.domain.setter.Uranus">
+    <bean id="uranus" class="com.baeldung.injectiontypes.xmlconfig.domain.setter.Uranus">
         <constructor-arg value="139822"/>
     </bean>
 
-    <bean id="solarSystemSetterDi" class="com.baeldung.spring.xmlconfig.domain.setter.SolarSystemSetterDi">
+    <bean id="solarSystemSetterDi" class="com.baeldung.injectiontypes.xmlconfig.domain.setter.SolarSystemSetterDi">
         <property name="jupiter" ref="jupiter">
 
         </property>

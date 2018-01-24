@@ -1,19 +1,18 @@
-package com.baeldung.spring.javaconfig.domain.constructor;
+package com.baeldung.injectiontypes.xmlconfig.domain.constructor;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
-
-@Component
 public class SolarSystemConstructorDi {
 
     private Moon moon;
     private Earth earth;
 
-    @Autowired
     public SolarSystemConstructorDi(Moon moon, Earth earth) {
         this.moon = moon;
         this.earth = earth;
+    }
+
+    public void printDiameters() {
+        System.out.println("Diameter of the moon is :" + moon.getDiameter() + " km");
+        System.out.println("Diameter of the earth is :" + earth.getDiameter() + " km");
     }
 
     public Moon getMoon() {

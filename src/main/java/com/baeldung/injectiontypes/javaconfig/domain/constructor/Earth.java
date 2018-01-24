@@ -1,4 +1,4 @@
-package com.baeldung.spring.xmlconfig.domain.constructor;
+package com.baeldung.injectiontypes.javaconfig.domain.constructor;
 
 
 public class Earth {

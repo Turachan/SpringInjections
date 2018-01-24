@@ -1,10 +1,10 @@
-package com.baeldung.spring.javaconfig.domain.setter;
+package com.baeldung.injectiontypes.xmlconfig.domain.constructor;
 
 
-public class Jupiter {
+public class Moon {
     private Integer diameter;
 
-    public Jupiter(Integer diameter) {
+    public Moon(Integer diameter) {
         this.diameter = diameter;
     }
 

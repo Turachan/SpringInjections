@@ -1,15 +1,15 @@
-package com.baeldung.spring.javaconfig.config;
+package com.baeldung.injectiontypes.javaconfig.config;
 
-import com.baeldung.spring.javaconfig.domain.constructor.Earth;
-import com.baeldung.spring.javaconfig.domain.constructor.Moon;
-import com.baeldung.spring.javaconfig.domain.setter.Jupiter;
-import com.baeldung.spring.javaconfig.domain.setter.Uranus;
+import com.baeldung.injectiontypes.javaconfig.domain.constructor.Earth;
+import com.baeldung.injectiontypes.javaconfig.domain.constructor.Moon;
+import com.baeldung.injectiontypes.javaconfig.domain.setter.Jupiter;
+import com.baeldung.injectiontypes.javaconfig.domain.setter.Uranus;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan({"com.baeldung.spring.javaconfig.domain"})
+@ComponentScan({"com.baeldung.injectiontypes.javaconfig.domain"})
 public class AppConfig {
 
     @Bean

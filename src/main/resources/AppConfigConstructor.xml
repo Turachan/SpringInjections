@@ -3,15 +3,16 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="moon" class="com.baeldung.spring.xmlconfig.domain.constructor.Moon">
+    <bean id="moon" class="com.baeldung.injectiontypes.xmlconfig.domain.constructor.Moon">
         <constructor-arg value="3474"/>
     </bean>
 
-    <bean id="earth" class="com.baeldung.spring.xmlconfig.domain.constructor.Earth">
+    <bean id="earth" class="com.baeldung.injectiontypes.xmlconfig.domain.constructor.Earth">
         <constructor-arg value="6371"/>
     </bean>
 
-    <bean id="solarSystemConstructorDi" class="com.baeldung.spring.xmlconfig.domain.constructor.SolarSystemConstructorDi">
+    <bean id="solarSystemConstructorDi"
+          class="com.baeldung.injectiontypes.xmlconfig.domain.constructor.SolarSystemConstructorDi">
         <constructor-arg index="0" ref="moon"/>
         <constructor-arg index="1" ref="earth"/>
     </bean>

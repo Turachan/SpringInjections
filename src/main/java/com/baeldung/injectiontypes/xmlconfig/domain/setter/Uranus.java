@@ -1,4 +1,4 @@
-package com.baeldung.spring.javaconfig.domain.setter;
+package com.baeldung.injectiontypes.xmlconfig.domain.setter;
 
 
 public class Uranus {
